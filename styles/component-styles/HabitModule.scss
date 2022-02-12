@@ -1,0 +1,33 @@
+.habit-module-container {
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  border-radius: 10px;
+  width: 350px;
+}
+.habit-module-text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 18px;
+}
+.habit-module-text-container p {
+  margin: 0px;
+}
+.habit-module-icon-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 18px;
+}
+.habit-module-icon-container-img {
+  color: red;
+  height: 35px;
+  width: 35px;
+  //   border: 1px orange solid;
+  position: relative;
+}

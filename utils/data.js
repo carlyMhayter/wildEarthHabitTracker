@@ -8,8 +8,6 @@ const weekDayCircleData = [
   { day: "SUN", num: "30", currentDate: true },
 ];
 
-export const createdHabits = [
-  { habitText: "Do yoga", habitComplete: 0, habitTotal: 1 },
-];
+export const createdHabits = [];
 
 export default weekDayCircleData;

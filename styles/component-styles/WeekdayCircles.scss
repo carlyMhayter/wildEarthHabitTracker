@@ -1,6 +1,7 @@
 .weekday-circles-container {
   display: flex;
   flex-direction: row;
-  margin: 30px 18px;
-  justify-content: space-between;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 30px 18px;
 }

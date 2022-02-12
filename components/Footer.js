@@ -6,7 +6,7 @@ export default function Footer(props) {
     <footer className="footer-container">
       {/* either display home footer */}
       {!nextButton && (
-        <div className="footer-normal-container">
+        <div className="footer-buttons-container">
           <div className="footer-container-img-container selected-footer-container">
             <div className="footer-container-img-house-container">
               <Image src="/home.svg" alt="house-icon" layout="fill" />

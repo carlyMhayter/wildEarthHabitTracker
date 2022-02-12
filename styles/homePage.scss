@@ -1,16 +1,19 @@
-.page-content {
+.homepage-content {
   position: relative;
+  width: 100%;
+  height: 100%;
+  // background-color: lightpink;
+  margin: 0px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  border: 1px hotpink solid;
+  align-items: center;
+  // justify-content: center;
 }
-
 .no-created-habits-text {
+  // border: 2px green solid;
   position: absolute;
-  display: inline-block;
+  text-align: center;
   top: 50%;
   left: 50%;
-  height: 100%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 }
