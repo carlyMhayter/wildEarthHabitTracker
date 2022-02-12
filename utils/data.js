@@ -5,7 +5,11 @@ const weekDayCircleData = [
   { day: "THURS", num: "27", currentDate: false },
   { day: "FRI", num: "28", currentDate: false },
   { day: "SAT", num: "29", currentDate: false },
-  { day: "SUN", num: "30", currentDate: false },
+  { day: "SUN", num: "30", currentDate: true },
+];
+
+export const createdHabits = [
+  { habitText: "Do yoga", habitComplete: 0, habitTotal: 1 },
 ];
 
 export default weekDayCircleData;
