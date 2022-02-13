@@ -6,8 +6,13 @@ import "../styles/component-styles/Footer.scss";
 import "../styles/component-styles/PageComponent.scss";
 import "../styles/component-styles/HabitModule.scss";
 import "../styles/homePage.scss";
+import "../styles/habitCounter.scss";
+import "../styles/component-styles/NextFooter.scss";
+import "../styles/component-styles/HabitHeader.scss";
+import "../styles/component-styles/SelectBubbles.scss";
+import "../styles/component-styles/HabitCount.scss";
+import "../styles/component-styles/HabitInfo.scss";
 
-import NavBar from "../components/NavBar";
 import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
@@ -15,7 +20,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className="page-content-global">
-      <NavBar />
       <Component {...pageProps} />
     </div>
   );

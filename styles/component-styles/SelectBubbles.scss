@@ -1,0 +1,38 @@
+.select-bubble-container {
+  // border: 1px purple solid;
+  max-width: 375px;
+  min-width: 375px;
+  font-size: 14px;
+  padding-bottom: 38px;
+}
+
+.select-bubbles-label {
+  //   border: 1px orange solid;
+  padding-bottom: 16px;
+  // padding-top: 44px;
+}
+
+.select-bubbles-row {
+  display: flex;
+  flex-direction: row;
+  //   border: 1px lightseagreen solid;
+  & div:not(:first-child) {
+    margin-left: 8px;
+  }
+}
+
+.select-bubbles-bubble {
+  background-color: #dfdfdf;
+  color: #4e4c49;
+  height: 27px;
+  width: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  &.selected-bubble {
+    background-color: #118ab2;
+    color: white;
+  }
+}

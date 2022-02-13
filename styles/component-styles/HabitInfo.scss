@@ -1,0 +1,16 @@
+.habit-counter-info-container {
+  // border: 1px pink solid;
+  width: 375px;
+}
+
+.habit-counter-info-container-text {
+  //   border: 1px orange solid;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  justify-content: space-between;
+  padding-bottom: 38px;
+}
+.right {
+  font-weight: 700;
+}

@@ -1,0 +1,31 @@
+.habit-counter-container {
+  width: 375px;
+  // border: 1px green solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 38px;
+}
+.habit-counter-text {
+  font-size: 14px;
+}
+.habit-count-container {
+  //   border: 1px purple solid;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.habit-count-holder {
+  background-color: #dfdfdf;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  width: auto;
+  padding: 0px 7px;
+  border-radius: 10px;
+  margin: 0px 6px;
+}

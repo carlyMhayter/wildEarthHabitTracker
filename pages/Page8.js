@@ -3,10 +3,11 @@ import weekDayCircleData, { createdHabits } from "../utils/data";
 import PageComponent from "../components/PageComponent";
 import Footer from "../components/Footer";
 import HabitModule from "../components/HabitModule";
+import NavBar from "../components/NavBar";
 
 export default function Page8() {
   return (
-    <PageComponent footer={<Footer />}>
+    <PageComponent header={<NavBar />} footer={<Footer />}>
       <div className="homepage-content">
         <WeekdayCircles weekDayCircleData={weekDayCircleData} />
         <HabitModule />
