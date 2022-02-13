@@ -12,10 +12,18 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 18px;
+  font-size: 14px;
+  & p:first-child {
+    // color: red;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: Poppins;
+  }
+  & p {
+    margin: 0px;
+  }
 }
-.habit-module-text-container p {
-  margin: 0px;
-}
+
 .habit-module-icon-container {
   width: 50%;
   display: flex;
@@ -24,10 +32,18 @@
   align-items: center;
   padding-right: 18px;
 }
-.habit-module-icon-container-img {
-  color: red;
+
+.habit-module-add-button {
+  padding: 0px;
   height: 35px;
   width: 35px;
-  //   border: 1px orange solid;
-  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -1,10 +1,12 @@
 .habit-header-back-text {
   padding-left: 34px;
   font-weight: 400;
-}
-
-.habit-header-habit-text {
-  color: blue;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .habit-header-empty {

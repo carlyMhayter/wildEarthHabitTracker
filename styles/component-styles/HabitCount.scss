@@ -17,6 +17,16 @@
   flex-direction: row;
   align-items: center;
 }
+.habit-counter-button {
+  background-color: white;
+  border: none;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 .habit-count-holder {
   background-color: #dfdfdf;

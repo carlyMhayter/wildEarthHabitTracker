@@ -11,9 +11,9 @@ export default function HabitModule() {
         <p> {`TODAY: ${habit.count}/ ${habit.goal}  `}</p>
       </div>
       <div className="habit-module-icon-container">
-        <div className="habit-module-icon-container-img">
-          <Image src="/plus.svg" alt="house-icon" layout="fill" />
-        </div>
+        <button className="habit-module-add-button" type="button">
+          +
+        </button>
       </div>
     </div>
   );

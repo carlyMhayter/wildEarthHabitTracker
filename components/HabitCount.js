@@ -3,7 +3,15 @@ export default function HabitCount() {
     <div className="habit-counter-container">
       <div className="habit-counter-text">How many times per day?</div>
       <div className="habit-count-container">
-        +<div className="habit-count-holder">0</div>-
+        <button className="habit-counter-button" type="button">
+          +
+        </button>
+        <button className="habit-counter-button" type="button">
+          <div className="habit-count-holder">0</div>
+        </button>
+        <button className="habit-counter-button" type="button">
+          -
+        </button>
       </div>
     </div>
   );

@@ -24,24 +24,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .footer-container-img-house-container,
 .footer-container-img-stats-container {
   //   color: red;
+  background-color: white;
+  border: none;
   height: 35px;
   width: 35px;
   //   border: 1px orange solid;
   position: relative;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .add-img-container {
   width: 58px;
+  &:hover {
+    cursor: pointer;
+  }
+
   //   background-color: orange;
 }
 .footer-container-img-add-container {
+  background-color: white;
+  border: none;
   height: 58px;
   width: 58px;
   position: relative;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .selected-footer-container {
