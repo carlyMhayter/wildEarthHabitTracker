@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function SelectBubbles(props) {
   const { labelName, bubbles } = props;
   return (
@@ -8,7 +10,7 @@ export default function SelectBubbles(props) {
           <div
             key={item.time}
             className={`select-bubbles-bubble ${
-              item.selected ? "selected-bubble" : ""
+              item.selected ? 'selected-bubble' : ''
             }`}
           >
             {item.time}
@@ -18,3 +20,8 @@ export default function SelectBubbles(props) {
     </div>
   );
 }
+
+SelectBubbles.propTypes = {
+  labelName: PropTypes.string.isRequired,
+  bubbles: PropTypes.array.isRequired,
+};

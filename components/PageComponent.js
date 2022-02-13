@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function PageComponent({ footer, children, header }) {
   return (
     <div className="page-component-container">
@@ -7,3 +9,9 @@ export default function PageComponent({ footer, children, header }) {
     </div>
   );
 }
+
+PageComponent.propTypes = {
+  header: PropTypes.object.isRequired,
+  children: PropTypes.object.isRequired,
+  footer: PropTypes.object.isRequired,
+};

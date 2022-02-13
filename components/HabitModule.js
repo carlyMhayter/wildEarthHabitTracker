@@ -1,7 +1,4 @@
-import React from "react";
-import Image from "next/image";
-
-const habit = { text: "Do yoga", count: 0, goal: 1 };
+const habit = { text: 'Do yoga', count: 0, goal: 1 };
 
 export default function HabitModule() {
   return (
