@@ -2,15 +2,13 @@ A mock up of a habit tracker app, created as part of a coding test for a positio
 
 ## Hosted at:
 
-https://vercel.com/carlymhayter/wild-earth-habit-tracker
+https://wild-earth-habit-tracker.vercel.app/
 
 ## Github:
 
 https://github.com/carlyMhayter/wildEarthHabitTracker
 
 ## Devlopment commands:
-
-"dev": "next", (start development server)
 
 - `yarn install` installs packages
 - `yarn dev` runs locally at http://localhost:3000/
