@@ -1,19 +1,24 @@
-.next-footer-component-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
+  width: 100%;
 }
 
-.next-footer-text-bubble {
+.bubble {
   background-color: black;
-  width: 292px;
+  width: 100%;
+  max-width: 292px;
   height: 58px;
   color: white;
   font-weight: 700;
   font-size: 18px;
   border-radius: 10px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     cursor: pointer;
   }

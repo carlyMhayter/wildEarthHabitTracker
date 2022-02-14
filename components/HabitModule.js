@@ -1,17 +1,20 @@
-const habit = { text: 'Do yoga', count: 0, goal: 1 };
+import styles from '../styles/component-styles/HabitModule.module.scss';
+import PropTypes from 'prop-types';
 
-export default function HabitModule() {
+export default function HabitModule({ habit }) {
   return (
-    <div className="habit-module-container">
-      <div className="habit-module-text-container">
+    <div className={styles.container}>
+      <div className={styles.text}>
         <p> {habit.text}</p>
         <p> {`TODAY: ${habit.count}/ ${habit.goal}  `}</p>
       </div>
-      <div className="habit-module-icon-container">
-        <button className="habit-module-add-button" type="button">
-          +
-        </button>
-      </div>
+      <button className={styles.button} type="button">
+        +
+      </button>
     </div>
   );
 }
+
+HabitModule.propTypes = {
+  habit: PropTypes.object.isRequired,
+};

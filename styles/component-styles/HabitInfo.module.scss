@@ -1,10 +1,8 @@
-.habit-counter-info-container {
-  // border: 1px pink solid;
-  width: 375px;
+.container {
+  width: 100%;
 }
 
-.habit-counter-info-container-text {
-  //   border: 1px orange solid;
+.text {
   display: flex;
   flex-direction: row;
   font-size: 14px;

@@ -1,23 +1,21 @@
-.habit-counter-container {
-  width: 375px;
-  // border: 1px green solid;
+.container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 38px;
 }
-.habit-counter-text {
+.text {
   font-size: 14px;
 }
-.habit-count-container {
-  //   border: 1px purple solid;
+.countcontainer {
   height: 36px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.habit-counter-button {
+.button {
   background-color: white;
   border: none;
   height: 100%;
@@ -28,7 +26,7 @@
   }
 }
 
-.habit-count-holder {
+.holder {
   background-color: #dfdfdf;
   height: 100%;
   display: flex;

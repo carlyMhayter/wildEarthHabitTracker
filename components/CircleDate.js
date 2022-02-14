@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
+import styles from '../styles/component-styles/CircleDate.module.scss';
 
-export default function CircleDate(props) {
-  const { day, num, currentDate } = props;
+export default function CircleDate({ day, num, currentDate }) {
   return (
-    <div className="circle-date-container">
+    <div className={styles.container}>
       <div
-        className={`circle-date-circle  ${
-          currentDate ? 'circle-date-selected ' : ''
-        }`}
+        className={`${styles.circle}  ${currentDate ? styles.selected : ''}`}
       />
-      <div className="circle-date-day">{day}</div>
-      <div className="circle-date-number">{num}</div>
+      <div className={styles.day}>{day}</div>
+      <div className={styles.number}>{num}</div>
     </div>
   );
 }

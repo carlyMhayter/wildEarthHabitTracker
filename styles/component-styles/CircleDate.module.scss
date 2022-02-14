@@ -1,9 +1,9 @@
-.circle-date-container {
+.container {
   position: relative;
   margin: 0px 5px;
 }
 
-.circle-date-circle {
+.circle {
   border: 1px solid rgba(0, 0, 0, 0.12);
   height: 39px;
   width: 39px;
@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.circle-date-day {
+.day {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -21,7 +21,7 @@
   font-family: Poppins;
 }
 
-.circle-date-number {
+.number {
   font-weight: 700;
   position: absolute;
   size: 14px;
@@ -30,6 +30,6 @@
   transform: translate(-50%, -50%);
 }
 
-.circle-date-selected {
+.selected {
   border: 1px solid #ef476f;
 }

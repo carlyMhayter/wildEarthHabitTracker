@@ -1,16 +1,15 @@
 import Link from 'next/link';
+import styles from '../styles/component-styles/HabitHeader.module.scss';
 
 export default function HabitHeader() {
   const habitName = 'Yoga';
   return (
-    <div className="navbar-container">
+    <div className={styles.container}>
       <Link href="/">
-        <button type="button" className="habit-header-back-text">
-          Back
-        </button>
+        <a className={`${styles.backtext} ${styles.sub}`}>Back</a>
       </Link>
       {habitName} Habit
-      <div className="habit-header-empty" />
+      <div className={styles.sub} />
     </div>
   );
 }

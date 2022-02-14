@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import styles from '../styles/component-styles/HabitInfo.module.scss';
 
 export default function HabitInfo({ habitInfo }) {
   return (
-    <div className="habit-counter-info-container">
+    <div className={styles.container}>
       {habitInfo.map((item) => (
-        <div className="habit-counter-info-container-text">
-          <p className="left">{item.left}</p>
-          <p className="right">{item.right}</p>
+        <div key={item.left} className={styles.text}>
+          <p>{item.left}</p>
+          <p className={styles.right}>{item.right}</p>
         </div>
       ))}
     </div>

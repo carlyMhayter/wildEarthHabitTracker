@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import styles from '../styles/component-styles/PageComponent.module.scss';
 
 export default function PageComponent({ footer, children, header }) {
   return (
-    <div className="page-component-container">
-      <div className="header-container">{header}</div>
-      <div className="children-container"> {children}</div>
-      <div className="footer-component-container"> {footer}</div>
+    <div className={styles.container}>
+      <div className={styles.header}>{header}</div>
+      <div className={styles.children}> {children}</div>
+      <div className={styles.footer}> {footer}</div>
     </div>
   );
 }

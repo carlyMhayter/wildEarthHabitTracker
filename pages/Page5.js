@@ -4,8 +4,10 @@ import HabitHeader from '../components/HabitHeader';
 import SelectBubbles from '../components/SelectBubbles';
 import HabitCount from '../components/HabitCount';
 import HabitInfo from '../components/HabitInfo';
+import styles from '../styles/page5.module.scss';
+import PropTypes from 'prop-types';
 
-export default function habitSettings() {
+export default function Page5({ habitsList, updateHabits }) {
   const daysWeek = [
     { time: 'Daily', selected: true },
     { time: 'Weekly', selected: false },
@@ -26,17 +28,29 @@ export default function habitSettings() {
   ];
 
   return (
-    <PageComponent header={<HabitHeader />} footer={<NextFooter />}>
-      <div className="add-habit-content">
+    <PageComponent
+      header={<HabitHeader />}
+      footer={
+        <NextFooter habitsList={habitsList} updateHabits={updateHabits} />
+      }
+    >
+      <div className={styles.content}>
         <SelectBubbles labelName="Goal Period" bubbles={daysWeek} />
         <HabitCount />
         <SelectBubbles labelName="Time of Day" bubbles={timeOfDay} />
         <HabitInfo habitInfo={habitInfo} />
-        <div className="habit-motivation-input-container">
-          Write something to motivate yourself:
-          <input className="habit-add-motivation-input" />
+        <div className={styles.inputcontainer}>
+          <label htmlFor="motivation-input">
+            Write something to motivate yourself:
+          </label>
+          <textarea id="motivation-input" className={styles.input} />
         </div>
       </div>
     </PageComponent>
   );
 }
+
+Page5.propTypes = {
+  habitsList: PropTypes.array.isRequired,
+  updateHabits: PropTypes.func.isRequired,
+};
