@@ -6,6 +6,7 @@ import HabitCount from '../components/HabitCount';
 import HabitInfo from '../components/HabitInfo';
 import styles from '../styles/page5.module.scss';
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 export default function Page5({ habitsList, updateHabits }) {
   const daysWeek = [
@@ -26,6 +27,8 @@ export default function Page5({ habitsList, updateHabits }) {
     { left: 'End Date', right: 'None' },
     { left: 'Reminders', right: '5:00 PM' },
   ];
+  const [days, updateDays] = useState(daysWeek);
+  const [times, updateTimes] = useState(timeOfDay);
 
   return (
     <PageComponent
@@ -33,11 +36,20 @@ export default function Page5({ habitsList, updateHabits }) {
       footer={
         <NextFooter habitsList={habitsList} updateHabits={updateHabits} />
       }
+      data={(days, times, updateDays, updateTimes)}
     >
       <div className={styles.content}>
-        <SelectBubbles labelName="Goal Period" bubbles={daysWeek} />
+        <SelectBubbles
+          labelName="Goal Period"
+          bubbles={days}
+          updater={updateDays}
+        />
         <HabitCount />
-        <SelectBubbles labelName="Time of Day" bubbles={timeOfDay} />
+        <SelectBubbles
+          labelName="Time of Day"
+          bubbles={times}
+          updater={updateTimes}
+        />
         <HabitInfo habitInfo={habitInfo} />
         <div className={styles.inputcontainer}>
           <label htmlFor="motivation-input" className={styles.label}>
