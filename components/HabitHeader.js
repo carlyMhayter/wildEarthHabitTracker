@@ -8,8 +8,7 @@ export default function HabitHeader() {
       <Link href="/">
         <a className={`${styles.backtext} ${styles.sub}`}>Back</a>
       </Link>
-      {habitName} Habit
-      <div className={styles.sub} />
+      <div className={styles.title}>{habitName} Habit</div>
     </div>
   );
 }

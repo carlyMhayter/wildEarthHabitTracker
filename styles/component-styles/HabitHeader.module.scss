@@ -6,21 +6,27 @@
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-weight: 700;
   font-size: 16px;
+  padding: 0 28px;
+  position: relative;
 }
 
 .backtext {
   font-weight: 400;
   font-size: 16px;
+  z-index: 1;
+  position: relative;
   &:hover {
     cursor: pointer;
   }
 }
 
-.sub {
-  position: relative;
-  width: 75px;
+.title {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  text-align: center;
 }

@@ -40,7 +40,7 @@ export default function Page5({ habitsList, updateHabits }) {
         <SelectBubbles labelName="Time of Day" bubbles={timeOfDay} />
         <HabitInfo habitInfo={habitInfo} />
         <div className={styles.inputcontainer}>
-          <label htmlFor="motivation-input">
+          <label htmlFor="motivation-input" className={styles.label}>
             Write something to motivate yourself:
           </label>
           <textarea id="motivation-input" className={styles.input} />

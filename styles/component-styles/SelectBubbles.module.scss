@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   font-size: 14px;
-  padding-bottom: 38px;
+  padding-bottom: 24px;
 }
 
 .label {
@@ -18,12 +18,12 @@
   background-color: #dfdfdf;
   color: #4e4c49;
   height: 27px;
-  width: 76px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   margin-bottom: 10px;
+  padding: 0px 11px;
 
   &:hover {
     cursor: pointer;
